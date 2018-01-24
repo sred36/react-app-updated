@@ -4,6 +4,7 @@ import './App.css';
 import './Custome.css';
 import H1Tag from './Stateless.js';
 import StateFull from './StateFull.js';
+import Background from './Background.jsx';
 
 class App extends Component {
   render() {
@@ -22,7 +23,8 @@ class App extends Component {
       <H1Tag color="bg-color-green" name="bg applied as green"/>
       
       <StateFull fieldName='SIVA' />
-
+        <Background />
+     
       </div>
     ); 
   }
