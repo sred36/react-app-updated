@@ -5,6 +5,7 @@ import './Custome.css';
 import H1Tag from './Stateless.js';
 import StateFull from './StateFull.js';
 import Background from './Background.jsx';
+import LifeCycle from './LifeCycle';
 
 class App extends Component {
   render() {
@@ -24,6 +25,8 @@ class App extends Component {
       
       <StateFull fieldName='SIVA' />
         <Background />
+
+        <LifeCycle v="1" />
      
       </div>
     ); 
