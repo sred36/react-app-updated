@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import fb from './fb.png';
-import down from './down.png';
 import './Bgcolor.css';
 
 class Background extends Component {

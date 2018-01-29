@@ -8,7 +8,7 @@ class StateFull extends Component {
     render() {
         return (
             <div className="Header">
-              { this.state.fieldName }
+                 { this.state.fieldName }
             </div>
         );
     }
