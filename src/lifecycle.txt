@@ -1,0 +1,10 @@
+Mount : 
+
+constructor => componentWillMount => render => componentDidMount
+
+
+Via Props Updation:
+componentWillReceiveProps => shouldComponentUpdate => componentWillUpdate => render => componentDidUpdate
+
+setState / forceUpdate
+shouldComponentUpdate => componentWillUpdate => render => componentDidUpdate
