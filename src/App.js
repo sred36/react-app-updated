@@ -5,8 +5,9 @@ import './Custome.css';
 import H1Tag from './Stateless.js';
 import StateFull from './StateFull.js';
 import Background from './Background.jsx';
-import Pics  from './Graphs/Pics.jsx';
-import TableData  from './Graphs/TableData.jsx'; 
+import PopulationView from './Svg/PopulationView.jsx';
+import DailogueHigher from './ModelComp/DailogueHigher.jsx';
+
 
 class App extends Component {
   render() {
@@ -26,8 +27,10 @@ class App extends Component {
       
       <StateFull fieldName='SIVA' />
         <Background />
-        <TableData />
-        <Pics styling="rect_bar"  DimeW="30" DimeH="300"/>
+       <PopulationView />
+       <DailogueHigher/>
+       
+       
 
       </div>
     ); 
