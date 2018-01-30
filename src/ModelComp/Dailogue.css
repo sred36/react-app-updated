@@ -1,3 +1,6 @@
 .hideMe {
 display:none;
 }
+.showMe{
+    display:block;  
+}

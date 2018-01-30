@@ -7,25 +7,26 @@ export default class DailogueHigher extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [
-                { width: props.width },
-                { height: props.height },
-                {show: false},
-                {modelInner: props.modelInner}
-            ]
+            width: props.width, height: props.height, show: false, modelInner: props.modelInner
         }
 
+
+
     }
-    componentWillMount() {
+    componentDidMount() {
         this.setState({ height: window.innerHeight + 'px', width: window.innerWidth + 'px' });
     }
 
-     
+    DailogueOver = () => {
+        this.setState({ show: !this.state.show });
+    }
+
+
     render() {
         return (
             <div>
-                <DailogueContent data={this.state.data} modelInner="Navigating your way to MD Anderson and around campus shouldn’t be stressful. We provide a parking guide, maps and directions, and shuttle information to assist you." />
-                <DailogueChildren  data={this.state.data} />
+                <DailogueContent data={this.state} modelInner="Navigating your way to MD Anderson and around campus shouldn’t be stressful. We provide a parking guide, maps and directions, and shuttle information to assist you." />
+                <DailogueChildren DailogueOver={this.DailogueOver} />
             </div>
         )
     }
